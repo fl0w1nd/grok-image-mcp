@@ -1,9 +1,9 @@
 {
-  "name": "grok-image-generation-mcp",
+  "name": "grok-image-mcp",
   "version": "1.0.0",
   "type": "module",
   "bin": {
-    "grok-image-generation-mcp": "dist/index.js"
+    "grok-image-mcp": "dist/index.js"
   },
   "scripts": {
     "build": "tsc && shx chmod +x dist/index.js",
@@ -25,7 +25,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/fl0w1nd/grok-image-generation-mcp"
+    "url": "https://github.com/fl0w1nd/grok-image-mcp"
   },
   "author": "fl0w1nd",
   "license": "MIT",

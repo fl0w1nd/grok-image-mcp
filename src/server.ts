@@ -111,7 +111,7 @@ function buildImageContents(result: ImageResponse) {
 
 export function createServer(): McpServer {
   const server = new McpServer({
-    name: "Grok Image Generation MCP Server",
+    name: "Grok Image MCP Server",
     version: "1.0.0",
   });
 

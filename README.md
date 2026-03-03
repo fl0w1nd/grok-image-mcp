@@ -1,4 +1,4 @@
-# Grok Image Generation MCP
+# Grok Image MCP
 
 [English](#english) | [中文](#中文)
 
@@ -8,7 +8,7 @@
 
 An MCP (Model Context Protocol) server for image generation and editing using the [Grok](https://docs.x.ai/developers/model-capabilities/images/generation) image model from xAI.
 
-> **Note**: This package was previously published as [`grok2-image-mcp-server`](https://www.npmjs.com/package/grok2-image-mcp-server). That package is now deprecated — please use `grok-image-generation-mcp` instead.
+> **Note**: This package was previously published as [`grok2-image-mcp-server`](https://www.npmjs.com/package/grok2-image-mcp-server). That package is now deprecated — please use `grok-image-mcp` instead.
 
 ## Features
 
@@ -27,7 +27,7 @@ An MCP (Model Context Protocol) server for image generation and editing using th
   "mcpServers": {
     "grok_image": {
       "command": "npx",
-      "args": ["grok-image-generation-mcp"],
+      "args": ["grok-image-mcp"],
       "env": {
         "XAIAPI_KEY": "your-xai-api-key"
       }
@@ -135,7 +135,7 @@ MIT
 
 基于 [MCP](https://modelcontextprotocol.io/) 协议的 [Grok](https://docs.x.ai/developers/model-capabilities/images/generation) 图像生成与编辑服务。
 
-> **注意**: 此包的前身是 [`grok2-image-mcp-server`](https://www.npmjs.com/package/grok2-image-mcp-server)，该包已弃用，请使用 `grok-image-generation-mcp`。
+> **注意**: 此包的前身是 [`grok2-image-mcp-server`](https://www.npmjs.com/package/grok2-image-mcp-server)，该包已弃用，请使用 `grok-image-mcp`。
 
 ## 功能
 
@@ -154,7 +154,7 @@ MIT
   "mcpServers": {
     "grok_image": {
       "command": "npx",
-      "args": ["grok-image-generation-mcp"],
+      "args": ["grok-image-mcp"],
       "env": {
         "XAIAPI_KEY": "你的 xAI API 密钥"
       }
