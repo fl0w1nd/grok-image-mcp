@@ -1,9 +1,9 @@
 {
-  "name": "grok2-image-mcp-server",
-  "version": "0.1.5",
+  "name": "grok-image-generation-mcp",
+  "version": "1.0.0",
   "type": "module",
   "bin": {
-    "grok2-image-mcp-server": "dist/index.js"
+    "grok-image-generation-mcp": "dist/index.js"
   },
   "scripts": {
     "build": "tsc && shx chmod +x dist/index.js",
@@ -16,17 +16,20 @@
   ],
   "keywords": [
     "mcp",
-    "grok2",
+    "grok",
+    "xai",
     "image-generation",
-    "model-context-protocol"
+    "image-editing",
+    "model-context-protocol",
+    "grok-imagine-image"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/fl0w1nd/grok2-image-mcp-server"
+    "url": "https://github.com/fl0w1nd/grok-image-generation-mcp"
   },
   "author": "fl0w1nd",
   "license": "MIT",
-  "description": "Grok2 Image MCP Server",
+  "description": "MCP server for Grok image generation and editing via xAI API",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.7.0",
     "undici": "^5.29.0",
