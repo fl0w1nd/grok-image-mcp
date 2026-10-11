@@ -154,7 +154,7 @@ npm ci
 npm test
 ```
 
-`npm test` builds the server and runs stdio integration tests against a local API fixture. It requires no API key and makes no paid requests. CI checks Node 22 and 24; releases run these checks before publishing with Node 24.
+`npm test` builds the server and runs stdio integration tests against a local API fixture. It requires no API key and makes no paid requests. CI checks Node 22 and 24. Pushing a `v*` tag runs the same checks before creating a GitHub Release. GitHub Actions does not publish to npm; publish locally with `npm publish --access public` after running the tests. The `prepublishOnly` script rebuilds the package before publishing.
 
 To run the checked-out version from an MCP client after building, use `node` with the absolute path to `dist/index.js` instead of `npx`. With nvm, select a supported Node version in the current shell (`nvm use 22` or `nvm use 24`); no default-alias change is needed. GUI clients may require an absolute Node executable path.
 
@@ -316,7 +316,7 @@ npm ci
 npm test
 ```
 
-`npm test` 会构建项目，并通过 stdio 和本地 API 桩验证工具行为，无需密钥，也不会产生付费调用。CI 覆盖 Node 22、24，发布前通过检查，再使用 Node 24 发布。
+`npm test` 会构建项目，并通过 stdio 和本地 API 桩验证工具行为，无需密钥，也不会产生付费调用。CI 覆盖 Node 22、24；推送 `v*` 标签时，通过同样的检查后创建 GitHub Release。GitHub Actions 不发布 npm 包；请先运行测试，再在本地执行 `npm publish --access public`。`prepublishOnly` 脚本会在发布前重新构建。
 
 使用当前源码版本时，构建后在 MCP 配置中以 `node` 和 `dist/index.js` 的绝对路径启动，替代 `npx`。使用 nvm 时，可在当前 shell 执行 `nvm use 22` 或 `nvm use 24`，无需修改默认别名。GUI 客户端可能需要填写 Node 可执行文件的绝对路径。
 
