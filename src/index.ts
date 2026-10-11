@@ -1,14 +1,10 @@
 #!/usr/bin/env node
-import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
-import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
-
+import { StdioServerTransport } from "@modelcontextprotocol/server/stdio";
 import { createServer } from "./server.js";
 
 async function main() {
-  const server: McpServer = createServer();
-  const transport = new StdioServerTransport();
-  await server.connect(transport);
-  console.debug("Grok Image MCP Server running on stdio");
+  const server = createServer();
+  await server.connect(new StdioServerTransport());
 }
 
 main().catch((error) => {
